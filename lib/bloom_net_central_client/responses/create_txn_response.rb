@@ -5,6 +5,10 @@ module BloomNetCentralClient
 
     private
 
+    def default_success
+      code == 201
+    end
+
     def default_txn
       BloomNetCentralClient::Txn.new(body[:data].slice(:id, :ref_no, :status))
     end

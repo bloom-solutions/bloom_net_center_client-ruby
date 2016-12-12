@@ -18,5 +18,9 @@ module BloomNetCentralClient
       BloomNetCentralClient::Txn.new(txn_attrs)
     end
 
+    def default_success
+      code == 200 && txn.present?
+    end
+
   end
 end

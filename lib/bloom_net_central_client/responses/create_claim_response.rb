@@ -5,6 +5,10 @@ module BloomNetCentralClient
 
     private
 
+    def default_success
+      code == 201
+    end
+
     def default_claim
       claim_attrs = body[:data].slice(*%i[
         recipient_first_name
