@@ -8,11 +8,18 @@ describe BloomNetCentralClient do
   it "is configurable" do
     described_class.configure do |c|
       c.host = "http://hello.com"
-      c.base_account = "GACABC"
     end
 
     config = described_class.configuration
     expect(config.host).to eq "http://hello.com"
-    expect(config.base_account).to eq "GACABC"
   end
+
+  describe ".new" do
+    it "initializes a BloomNetCentralClient::Client" do
+      client = described_class.new(host: "http://abc.com")
+      expect(client).to be_a described_class::Client
+      expect(client.host).to eq "http://abc.com"
+    end
+  end
+
 end
