@@ -11,9 +11,11 @@ require "bloom_net_central_client/models/txn"
 require "bloom_net_central_client/requests/base_request"
 require "bloom_net_central_client/requests/create_claim_request"
 require "bloom_net_central_client/requests/create_txn_request"
+require "bloom_net_central_client/requests/find_txn_request"
 require "bloom_net_central_client/responses/base_response"
 require "bloom_net_central_client/responses/create_claim_response"
 require "bloom_net_central_client/responses/create_txn_response"
+require "bloom_net_central_client/responses/find_txn_response"
 
 module BloomNetCentralClient
 
