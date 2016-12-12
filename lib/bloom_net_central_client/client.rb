@@ -10,6 +10,12 @@ module BloomNetCentralClient
       CreateTxnResponse.new(raw_response: raw_response)
     end
 
+    def create_claim(opts)
+      request = CreateClaimRequest.new(opts.merge(default_opts))
+      raw_response = request.()
+      CreateClaimResponse.new(raw_response: raw_response)
+    end
+
     private
 
     def default_opts
