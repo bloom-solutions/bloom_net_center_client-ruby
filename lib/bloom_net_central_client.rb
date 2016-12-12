@@ -20,8 +20,16 @@ module BloomNetCentralClient
     has :host, classes: String
   end
 
-  def self.new(opts)
-    Client.new(opts)
+  def self.new(opts={})
+    Client.new(global_opts.merge(opts))
+  end
+
+  private
+
+  def self.global_opts
+    %i[host].each_with_object({}) do |var, hash|
+      hash[var] = BloomNetCentralClient.configuration.send(var)
+    end
   end
 
 end

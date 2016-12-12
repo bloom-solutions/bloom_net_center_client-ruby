@@ -19,6 +19,11 @@ describe BloomNetCentralClient do
       client = described_class.new(host: "http://abc.com")
       expect(client).to be_a described_class::Client
       expect(client.host).to eq "http://abc.com"
+
+      BloomNetCentralClient.configure { |c| c.host = "http://xyz.com" }
+      client = described_class.new
+      expect(client).to be_a described_class::Client
+      expect(client.host).to eq "http://xyz.com"
     end
   end
 
