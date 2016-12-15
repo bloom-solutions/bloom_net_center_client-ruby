@@ -4,17 +4,9 @@ module BloomNetCentralClient
     include Virtus.model
     attribute :host, String
 
-    def create_txn(opts)
-      request = CreateTxnRequest.new(opts.merge(default_opts))
-      raw_response = request.()
-      CreateTxnResponse.new(raw_response: raw_response)
-    end
-
-    def create_claim(opts)
-      request = CreateClaimRequest.new(opts.merge(default_opts))
-      raw_response = request.()
-      CreateClaimResponse.new(raw_response: raw_response)
-    end
+    include APIClientBase::Client.module(default_opts: :default_opts)
+    api_action :create_txn
+    api_action :create_claim
 
     private
 
