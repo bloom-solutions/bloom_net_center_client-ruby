@@ -12,20 +12,6 @@ module BloomNetCentralClient
       it { is_expected.to have_attribute(:txn) }
     end
 
-    describe "#success?" do
-      subject(:response) { described_class.new(code: code) }
-
-      context "code is 201" do
-        let(:code) { 201 }
-        it { is_expected.to be_success }
-      end
-
-      context "code is not 201" do
-        let(:code) { 422 }
-        it { is_expected.to_not be_success }
-      end
-    end
-
     describe "#txn" do
       let(:body) do
         {

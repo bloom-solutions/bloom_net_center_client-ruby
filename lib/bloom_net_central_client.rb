@@ -1,3 +1,4 @@
+require "api_client_base"
 require "gem_config"
 require "httparty"
 require "virtus"
