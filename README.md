@@ -1,13 +1,13 @@
-# BloomNetCentralClient
+# BloomNetCenterClient
 
-Ruby wrapper for BloomNet Central's API
+Ruby wrapper for BloomNet Center's API
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bloom_net_central_client'
+gem 'bloom_net_center_client'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install bloom_net_central_client
+    $ gem install bloom_net_center_client
 
 ## Usage
 
@@ -30,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/imacchiato/bloom_net_central_client. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at
 
 ## License
 
