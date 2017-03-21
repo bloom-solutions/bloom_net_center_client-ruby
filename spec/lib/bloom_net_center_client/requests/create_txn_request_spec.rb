@@ -27,9 +27,12 @@ module BloomNetCenterClient
       let(:request) { described_class.new }
       let(:body) { JSON.parse(request.body).with_indifferent_access }
 
-      it "has the correct structure" do
+      it "has the correct type" do
         expect(body[:data][:type]).to eq "txns"
-        described_class::BODY_ATTRS.each do |attr|
+      end
+
+      described_class::BODY_ATTRS.each do |attr|
+        it "has #{attr.to_s.dasherize} as an attribute" do
           expect(body[:data][:attributes]).to have_key(attr.to_s.dasherize)
         end
       end

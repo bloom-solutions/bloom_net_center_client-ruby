@@ -6,7 +6,12 @@ module BloomNetCenterClient
     private
 
     def default_txn
-      BloomNetCenterClient::Txn.new(body[:data].slice(:id, :ref_no, :status))
+      attributes = Txn::ATTRS.each_with_object({}) do |attr, hash|
+        attr_dasherized = attr.to_s.dasherize
+        hash[attr] = body[:data][attr_dasherized] ||
+          body[:data][:attributes][attr_dasherized]
+      end
+      BloomNetCenterClient::Txn.new(attributes)
     end
 
   end
