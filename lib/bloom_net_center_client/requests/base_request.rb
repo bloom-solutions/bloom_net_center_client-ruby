@@ -25,5 +25,9 @@ module BloomNetCenterClient
       OpenSSL::HMAC.hexdigest("SHA256", secret, body)
     end
 
+    def default_body
+      {}.to_json
+    end
+
   end
 end

@@ -1,14 +1,14 @@
 module BloomNetCenterClient
   class Client
 
-    include Virtus.model
+    include APIClientBase::Client.module(default_opts: :default_opts)
+    api_action :create_txn
+    api_action :find_txn, args: [:id]
+    api_action :create_claim
+
     BloomNetCenterClient::GLOBAL_OPTS.each do |attr|
       attribute attr, String
     end
-
-    include APIClientBase::Client.module(default_opts: :default_opts)
-    api_action :create_txn
-    api_action :create_claim
 
     private
 

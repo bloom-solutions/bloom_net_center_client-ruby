@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging.bloomnet.center/api/v1/txns
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"txns","attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
+        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
+        Up St","recipient-city":"Upcity","recipient-contact-number":"+638188927288","amount":"2050.0","currency":"PHP"}}}'
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/vnd.api+json
+      Accept:
+      - application/vnd.api+json
+      Authorization:
+      - HMAC-SHA256 59514c60d8515aba92c0395e73373611:b106a9587fffba94642ecac057e29e0704a7b6e933cd2a69eeb2c677aceb0ab7
+      Expect:
+      - ''
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Alternate-Protocol:
+      - 443:quic
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json
+      Etag:
+      - W/"5483faec6989620ad1dccdd596bbd854"
+      Location:
+      - https://staging.bloomnet.center/api/v1/txns/MHGMZMT2
+      Server:
+      - Caddy
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - bfc1b9f7-a952-4623-8eed-2e72d5bce8b9
+      X-Runtime:
+      - '0.018397'
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Tue, 21 Mar 2017 07:10:29 GMT
+      Content-Length:
+      - '560'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"MHGMZMT2","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/MHGMZMT2"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
+        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-contact-number":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-contact-number":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
+    http_version: 
+  recorded_at: Tue, 21 Mar 2017 07:10:30 GMT
+- request:
+    method: get
+    uri: https://staging.bloomnet.center/api/v1/txns/MHGMZMT2
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/vnd.api+json
+      Accept:
+      - application/vnd.api+json
+      Authorization:
+      - HMAC-SHA256 59514c60d8515aba92c0395e73373611:a08da942016350ac400a2543d3844c4301fb4c13de93288070a4c5aa28647e67
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Alternate-Protocol:
+      - 443:quic
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json
+      Etag:
+      - W/"5483faec6989620ad1dccdd596bbd854"
+      Server:
+      - Caddy
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 66f0ca13-d2fe-4905-8ce5-a61517a239d4
+      X-Runtime:
+      - '0.009698'
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Tue, 21 Mar 2017 07:10:30 GMT
+      Content-Length:
+      - '560'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"MHGMZMT2","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/MHGMZMT2"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
+        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-contact-number":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-contact-number":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
+    http_version: 
+  recorded_at: Tue, 21 Mar 2017 07:10:30 GMT
+recorded_with: VCR 3.0.3

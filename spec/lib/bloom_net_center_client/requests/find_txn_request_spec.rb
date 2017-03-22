@@ -9,9 +9,7 @@ module BloomNetCenterClient
 
     describe "attributes" do
       subject { described_class }
-      it { is_expected.to have_attribute(:ref_no, String) }
-      it { is_expected.to have_attribute(:recipient_first_name, String) }
-      it { is_expected.to have_attribute(:recipient_last_name, String) }
+      it { is_expected.to have_attribute(:id, String) }
     end
 
   end
