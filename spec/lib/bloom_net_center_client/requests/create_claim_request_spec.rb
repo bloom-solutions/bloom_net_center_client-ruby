@@ -9,10 +9,21 @@ module BloomNetCenterClient
 
     describe "attributes" do
       subject { described_class }
-      it { is_expected.to have_attribute(:recipient_first_name, String) }
-      it { is_expected.to have_attribute(:recipient_last_name, String) }
       it { is_expected.to have_attribute(:ref_no, String) }
-      it { is_expected.to have_attribute(:destination, String) }
+      it { is_expected.to have_attribute(:account, String) }
+    end
+
+    describe "#body" do
+      let(:request) { described_class.new(ref_no: "JUWAX", account: "GDACALA") }
+      let(:request_body) { JSON.parse(request.body) }
+      let(:data) { request_body["data"] }
+      let(:attributes) { data["attributes"] }
+
+      it "is the body that the API expects" do
+        expect(data["type"]).to eq "claims"
+        expect(attributes["ref-no"]).to eq "JUWAX"
+        expect(attributes["account"]).to eq "GDACALA"
+      end
     end
 
   end
