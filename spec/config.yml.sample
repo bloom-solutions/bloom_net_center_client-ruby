@@ -1,0 +1,4 @@
+---
+host: https://staging.bloomnet.center
+token: mytoken
+secret: mysecret
