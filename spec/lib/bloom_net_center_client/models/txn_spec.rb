@@ -12,13 +12,13 @@ module BloomNetCenterClient
       it { is_expected.to have_attribute(:sender_street, String) }
       it { is_expected.to have_attribute(:sender_city, String) }
       it { is_expected.to have_attribute(:sender_province, String) }
-      it { is_expected.to have_attribute(:sender_contact_number, String) }
+      it { is_expected.to have_attribute(:sender_mobile, String) }
       it { is_expected.to have_attribute(:recipient_first_name, String) }
       it { is_expected.to have_attribute(:recipient_last_name, String) }
       it { is_expected.to have_attribute(:recipient_street, String) }
       it { is_expected.to have_attribute(:recipient_city, String) }
       it { is_expected.to have_attribute(:recipient_province, String) }
-      it { is_expected.to have_attribute(:recipient_contact_number, String) }
+      it { is_expected.to have_attribute(:recipient_mobile, String) }
       it { is_expected.to have_attribute(:amount, BigDecimal) }
       it { is_expected.to have_attribute(:account, String) }
       it { is_expected.to have_attribute(:currency, String) }

@@ -10,7 +10,7 @@ module BloomNetCenterClient
     attribute :recipient_last_name, String
     attribute :recipient_street, String
     attribute :recipient_city, String
-    attribute :recipient_contact_number, String
+    attribute :recipient_mobile, String
     attribute :amount, BigDecimal
     attribute :currency, String
     attribute :body, String, lazy: true, default: :default_body
@@ -25,7 +25,7 @@ module BloomNetCenterClient
       recipient_last_name
       recipient_street
       recipient_city
-      recipient_contact_number
+      recipient_mobile
       amount
       currency
     ]

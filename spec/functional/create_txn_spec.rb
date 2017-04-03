@@ -15,7 +15,7 @@ RSpec.describe "Create Txn", vcr: {record: :once} do
       recipient_last_name: "Roberto",
       recipient_street: "33 Up St",
       recipient_city: "Upcity",
-      recipient_contact_number: "+638188927288",
+      recipient_mobile: "+638188927288",
       amount: 2050.0,
       currency: "PHP",
     )

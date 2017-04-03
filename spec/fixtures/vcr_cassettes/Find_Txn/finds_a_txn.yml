@@ -7,7 +7,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"type":"txns","attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
         Lilian St","sender-city":"Sum City","sender-province":"Sum Province","recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
-        Up St","recipient-city":"Upcity","recipient-contact-number":"+638188927288","amount":"2050.0","currency":"PHP"}}}'
+        Up St","recipient-city":"Upcity","recipient-mobile":"+638188927288","amount":"2050.0","currency":"PHP"}}}'
     headers:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
@@ -55,8 +55,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"MHGMZMT2","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/MHGMZMT2"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
-        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-contact-number":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
-        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-contact-number":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
+        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-mobile":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
     http_version: 
   recorded_at: Tue, 21 Mar 2017 07:10:30 GMT
 - request:
@@ -110,8 +110,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"MHGMZMT2","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/MHGMZMT2"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
-        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-contact-number":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
-        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-contact-number":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
+        Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-mobile":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
     http_version: 
   recorded_at: Tue, 21 Mar 2017 07:10:30 GMT
 recorded_with: VCR 3.0.3

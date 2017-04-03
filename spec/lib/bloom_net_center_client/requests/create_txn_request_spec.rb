@@ -18,7 +18,7 @@ module BloomNetCenterClient
       it { is_expected.to have_attribute(:recipient_last_name, String) }
       it { is_expected.to have_attribute(:recipient_street, String) }
       it { is_expected.to have_attribute(:recipient_city, String) }
-      it { is_expected.to have_attribute(:recipient_contact_number, String) }
+      it { is_expected.to have_attribute(:recipient_mobile, String) }
       it { is_expected.to have_attribute(:amount, BigDecimal) }
       it { is_expected.to have_attribute(:currency, String) }
     end
