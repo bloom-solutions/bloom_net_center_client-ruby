@@ -22,5 +22,12 @@ module BloomNetCenterClient
 
     ATTRS = self.attribute_set.map(&:name)
 
+    STATUSES = {
+      unfunded: "unfunded",
+      funded: "funded",
+      claiming: "claiming",
+      claimed: "claimed",
+    }
+
   end
 end
