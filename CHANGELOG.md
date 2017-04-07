@@ -4,9 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] - 2017-04-07
+## [0.5.0] - 2017-04-07
 ### Added
-- Add `STATUSES` status list for transactions to 
+- Add `Txn::STATUSES` status list for users of the client to use and refer for `bloom_net_center Txn` statuses
 
 ## [0.4.0] - 2017-04-03
 ### Changed
