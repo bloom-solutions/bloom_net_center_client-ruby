@@ -48,6 +48,7 @@ module BloomNetCenterClient
           expect(txn).to be_a Txn
           expect(txn.id).to eq "refno"
           expect(txn.tracking_no).to eq "trackno"
+          expect(txn.ref_no).to eq "refno"
           expect(txn.sender_first_name).to eq "Fatima"
           expect(txn.sender_last_name).to eq "Roberto"
           expect(txn.sender_street).to eq "24 Lilian St"

@@ -5,7 +5,7 @@ http_interactions:
     uri: https://staging.bloomnet.center/api/v1/claims
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"claims","attributes":{"ref-no":"SOMERANDOM","account":"GDYRAPR626KVQVEF2HTPGR6TCAHVYVGKBO63PZA4FGKZAYAWIC5GBTP2"}}}'
+      string: '{"data":{"type":"claims","attributes":{"tracking-no":"SOMERANDOM","account":"GDYRAPR626KVQVEF2HTPGR6TCAHVYVGKBO63PZA4FGKZAYAWIC5GBTP2"}}}'
     headers:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
@@ -14,7 +14,7 @@ http_interactions:
       Accept:
       - application/vnd.api+json
       Authorization:
-      - HMAC-SHA256 59514c60d8515aba92c0395e73373611:b403eb0865cb2bf747bdc8ba5cf74ce71257f2c0b067b900ccd162d12ffe2682
+      - HMAC-SHA256 59514c60d8515aba92c0395e73373611:d8fedb29f0e8df1c658fc72c729e24f490c6bb0be367d32c3d963e24258d60fe
       Expect:
       - ''
   response:
@@ -31,9 +31,9 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json
       Etag:
-      - W/"f0dcad52d7d3c77f33284a7d83e0872d"
+      - W/"2092c5b4602631877e5f586417cb9a98"
       Location:
-      - https://staging.bloomnet.center/api/v1/claims/SOMERANDOM
+      - https://staging.bloomnet.center/api/v1/claims/23
       Server:
       - Caddy
       X-Content-Type-Options:
@@ -41,18 +41,18 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Request-Id:
-      - f60ecd4c-b951-4bf6-b92a-5755529a9bff
+      - d69c3c39-d9d7-45f2-9f32-45dc9c4b6f3e
       X-Runtime:
-      - '0.041956'
+      - '0.022518'
       X-Xss-Protection:
       - 1; mode=block
       Date:
-      - Mon, 27 Mar 2017 02:21:09 GMT
+      - Sat, 06 May 2017 15:28:44 GMT
       Content-Length:
-      - '243'
+      - '232'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"SOMERANDOM","type":"claims","links":{"self":"https://staging.bloomnet.center/api/v1/claims/SOMERANDOM"},"attributes":{"ref-no":"SOMERANDOM","status":"fresh","account":"GDYRAPR626KVQVEF2HTPGR6TCAHVYVGKBO63PZA4FGKZAYAWIC5GBTP2"}}}'
+      string: '{"data":{"id":"23","type":"claims","links":{"self":"https://staging.bloomnet.center/api/v1/claims/23"},"attributes":{"tracking-no":"SOMERANDOM","status":"fresh","account":"GDYRAPR626KVQVEF2HTPGR6TCAHVYVGKBO63PZA4FGKZAYAWIC5GBTP2"}}}'
     http_version: 
-  recorded_at: Mon, 27 Mar 2017 02:21:10 GMT
+  recorded_at: Sat, 06 May 2017 15:28:44 GMT
 recorded_with: VCR 3.0.3

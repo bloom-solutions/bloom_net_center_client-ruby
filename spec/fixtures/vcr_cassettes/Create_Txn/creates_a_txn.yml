@@ -16,7 +16,7 @@ http_interactions:
       Accept:
       - application/vnd.api+json
       Authorization:
-      - HMAC-SHA256 59514c60d8515aba92c0395e73373611:b106a9587fffba94642ecac057e29e0704a7b6e933cd2a69eeb2c677aceb0ab7
+      - HMAC-SHA256 59514c60d8515aba92c0395e73373611:422144b7595244da58a0768d70913e7fe262739de01364fdbd9773e2f20a0630
       Expect:
       - ''
   response:
@@ -33,9 +33,9 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json
       Etag:
-      - W/"0919a183c9f7c2df8158164cc027bf32"
+      - W/"13d9213f1cbfa2f8c547b39b6e35aaa3"
       Location:
-      - https://staging.bloomnet.center/api/v1/txns/ET3CU2A9
+      - https://staging.bloomnet.center/api/v1/txns/9QIAES5ERCOW
       Server:
       - Caddy
       X-Content-Type-Options:
@@ -43,20 +43,20 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Request-Id:
-      - 5296ba87-59d9-4e7f-9710-0a1b22af3151
+      - 01ea0fa7-17b3-498c-910c-d540b04f4a2a
       X-Runtime:
-      - '0.025546'
+      - '0.237154'
       X-Xss-Protection:
       - 1; mode=block
       Date:
-      - Tue, 21 Mar 2017 02:50:35 GMT
+      - Sat, 06 May 2017 15:27:18 GMT
       Content-Length:
-      - '560'
+      - '631'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"ET3CU2A9","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/ET3CU2A9"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
+      string: '{"data":{"id":"9QIAES5ERCOW","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/9QIAES5ERCOW"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
         Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-mobile":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
-        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":null,"status":"unfunded"}}}'
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":"GB4BPRQI7PHU3ZA25253FNKBBFS3WNTSFWPXCV7V23PF2GFPJGE5GAS5","status":"unfunded","tracking-no":"7XCCK494"}}}'
     http_version: 
-  recorded_at: Tue, 21 Mar 2017 02:50:34 GMT
+  recorded_at: Sat, 06 May 2017 15:27:18 GMT
 recorded_with: VCR 3.0.3

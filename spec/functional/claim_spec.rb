@@ -13,7 +13,7 @@ RSpec.describe "Claim a Txn", vcr: {record: :once} do
     # - we migrate to unique accounts per txn
 
     response = client.create_claim(
-      ref_no: "SOMERANDOM",
+      tracking_no: "SOMERANDOM",
       account: "GDYRAPR626KVQVEF2HTPGR6TCAHVYVGKBO63PZA4FGKZAYAWIC5GBTP2",
     )
 

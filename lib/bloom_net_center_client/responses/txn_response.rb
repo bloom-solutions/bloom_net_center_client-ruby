@@ -14,6 +14,7 @@ module BloomNetCenterClient
         hash[attr] = body[:data][attr_dasherized] ||
           attribute_params[attr_dasherized]
       end
+      attributes[:ref_no] = attributes[:id]
       BloomNetCenterClient::Txn.new(attributes)
     end
 
