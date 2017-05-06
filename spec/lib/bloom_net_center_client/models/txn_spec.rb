@@ -6,6 +6,8 @@ module BloomNetCenterClient
     describe "attributes" do
       subject { described_class }
       it { is_expected.to have_attribute(:id, String) }
+      it { is_expected.to have_attribute(:tracking_no, String) }
+      it { is_expected.to have_attribute(:ref_no, String) }
       it { is_expected.to have_attribute(:status, String) }
       it { is_expected.to have_attribute(:sender_first_name, String) }
       it { is_expected.to have_attribute(:sender_last_name, String) }
