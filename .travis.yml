@@ -1,7 +1,10 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.3.0
+- 2.3.0
 before_install: gem install bundler -v 1.13.1
 before_script:
-  - cp spec/config.yml{.sample,}
+- cp spec/config.yml{.sample,}
+notifications:
+  slack:
+    secure: YLpPXl3LMANVuKEdzUKuwcmJhjjc/RM/dXQIegz4HswbqTKlZCSCXM2FQapvUD+x2X7LXJO5xsAlVEhuhXi6eJkHwcKr+7TuunyygsDhxC0546pqN2fUnpjTQBjekSGUeaqhoIx942CXqlj1cUnMx81AQjALrjdMbcxbqBk07qSVuufbC/ne6bZLNOymbKrv5wlTCru/7DRgUbu0i6XXGuGsjoH102ZdeE/reYfINAR0kJum5nfAvR6NsfgZE/F8LvL4YHf4JgHt4LPhPduk30TKfIWYXRVMCTrO/oiaWskoQo/LBn9RtYkSXKNS8VPTfGk11IMejmC+o7WDDM+56+lnvTBI0ehx+7c3kB9Y6sCkOoEYUz7l2CIm2x4cp5I+kml/echKCrYptv71MDfn9z7BaNO6XbxIlX4pLbCs+4ctrzhRlKOgfFpN9KbknxQ5uulhgE0SvGETOlyCP8Ph08bjLpZ1tKZ6AlpboeHOaou4iqmdMuCKWXov500TGN/mlflzkMs3kVE7PoWSsI4qp/ZbuFFsMjqJ6zBEilJnNDmrSJbHFt1jYhGemduf9ZpQb3Hsbego8xTXbwRXd4uVtTGDw6yHCXOKmY8M4f9vRoecOHsj61HBpI2Q9VKOt6ZuJPI15zL2q7cZIUSnejFcgRfNsLeUGEa6gnmxMK0Ht3Q=
