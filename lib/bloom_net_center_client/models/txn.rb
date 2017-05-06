@@ -3,6 +3,7 @@ module BloomNetCenterClient
 
     include Virtus.model
     attribute :id, String
+    attribute :tracking_no, String
     attribute :status, String
     attribute :sender_first_name, String
     attribute :sender_last_name, String

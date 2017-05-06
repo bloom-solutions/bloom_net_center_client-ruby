@@ -16,10 +16,11 @@ module BloomNetCenterClient
       let(:body) do
         {
           data: {
-            recipient_first_name: "recipient first name",
-            recipient_last_name: "recipient last name",
-            ref_no: "tracking",
-            status: "remote-status",
+            attributes: {
+              "tracking-no" => "tracking no",
+              "status" => "remote-status",
+              "account" => "stellar-address",
+            }
           }
         }
       end
@@ -28,10 +29,9 @@ module BloomNetCenterClient
 
       it "builds a claim out of the response" do
         expect(claim).to be_a Claim
-        expect(claim.recipient_first_name).to eq "recipient first name"
-        expect(claim.recipient_last_name).to eq "recipient last name"
-        expect(claim.ref_no).to eq "tracking"
+        expect(claim.tracking_no).to eq "tracking no"
         expect(claim.status).to eq "remote-status"
+        expect(claim.account).to eq "stellar-address"
       end
     end
 
