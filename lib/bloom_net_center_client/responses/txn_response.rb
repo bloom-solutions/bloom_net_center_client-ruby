@@ -9,7 +9,7 @@ module BloomNetCenterClient
       attribute_params = body[:data][:attributes]
       return nil if attribute_params.nil?
 
-      attributes = Txn::ATTRS.each_with_object({}) do |attr, hash|
+      attributes = BloomNetCenterClient::Txn::ATTRS.each_with_object({}) do |attr, hash|
         attr_dasherized = attr.to_s.dasherize
         hash[attr] = body[:data][attr_dasherized] ||
           attribute_params[attr_dasherized]

@@ -6,13 +6,15 @@ module BloomNetCenterClient
     private
 
     def default_claim
-      claim_attrs = body[:data].slice(*%i[
-        recipient_first_name
-        recipient_last_name
-        ref_no
-        status
-      ])
-      BloomNetCenterClient::Claim.new(claim_attrs)
+      attribute_params = body[:data][:attributes]
+      return nil if attribute_params.nil?
+
+      attributes = BloomNetCenterClient::Claim::ATTRS.each_with_object({}) do |attr, hash|
+        attr_dasherized = attr.to_s.dasherize
+        hash[attr] = body[:data][attr_dasherized] ||
+          attribute_params[attr_dasherized]
+      end
+      BloomNetCenterClient::Claim.new(attributes)
     end
 
   end

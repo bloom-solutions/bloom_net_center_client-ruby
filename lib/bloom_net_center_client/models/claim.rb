@@ -1,11 +1,16 @@
 module BloomNetCenterClient
   class Claim
 
+    ATTRS = %i[
+      tracking_no
+      status
+      account
+    ]
+
     include Virtus.model
-    attribute :recipient_first_name, String
-    attribute :recipient_last_name, String
-    attribute :ref_no, String
+    attribute :tracking_no, String
     attribute :status, String
+    attribute :account, String
 
   end
 end

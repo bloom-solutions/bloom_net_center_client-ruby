@@ -1,7 +1,7 @@
 module BloomNetCenterClient
   class CreateClaimRequest < BaseRequest
 
-    attribute :ref_no, String
+    attribute :tracking_no, String
     attribute :account, String
     attribute :body, String, lazy: true, default: :default_body
 
@@ -20,7 +20,7 @@ module BloomNetCenterClient
         data: {
           type: "claims",
           attributes: {
-            "ref-no" => ref_no,
+            "tracking-no" => tracking_no,
             account: account,
           }
         }
