@@ -33,9 +33,9 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json
       Etag:
-      - W/"0ef2a878252178d6fd353175840908f3"
+      - W/"49a3bd63e6ae2ceaadfc6c0a3a2269b8"
       Location:
-      - https://staging.bloomnet.center/api/v1/txns/MRJW3H1TABU2
+      - https://staging.bloomnet.center/api/v1/txns/4RVR92XL
       Server:
       - Caddy
       X-Content-Type-Options:
@@ -43,25 +43,25 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Request-Id:
-      - 952e7ea9-d9f5-4ad8-ac0c-5fced620c9cc
+      - dba32048-1e25-4192-8bab-4fa388291b0c
       X-Runtime:
-      - '0.020388'
+      - '0.197778'
       X-Xss-Protection:
       - 1; mode=block
       Date:
-      - Sat, 06 May 2017 15:29:32 GMT
+      - Mon, 08 May 2017 06:52:56 GMT
       Content-Length:
-      - '631'
+      - '647'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"MRJW3H1TABU2","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/MRJW3H1TABU2"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
+      string: '{"data":{"id":"4RVR92XL","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/4RVR92XL"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
         Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-mobile":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
-        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":"GB4BPRQI7PHU3ZA25253FNKBBFS3WNTSFWPXCV7V23PF2GFPJGE5GAS5","status":"unfunded","tracking-no":"FJ33E3FZ"}}}'
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":"GB4BPRQI7PHU3ZA25253FNKBBFS3WNTSFWPXCV7V23PF2GFPJGE5GAS5","status":"unfunded","tracking-no":"4RVR92XL","ref-no":"NILEDKWDM31N"}}}'
     http_version: 
-  recorded_at: Sat, 06 May 2017 15:29:32 GMT
+  recorded_at: Mon, 08 May 2017 06:52:55 GMT
 - request:
     method: get
-    uri: https://staging.bloomnet.center/api/v1/txns/MRJW3H1TABU2
+    uri: https://staging.bloomnet.center/api/v1/txns/4RVR92XL
     body:
       encoding: UTF-8
       string: "{}"
@@ -90,7 +90,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json
       Etag:
-      - W/"0ef2a878252178d6fd353175840908f3"
+      - W/"49a3bd63e6ae2ceaadfc6c0a3a2269b8"
       Server:
       - Caddy
       X-Content-Type-Options:
@@ -98,20 +98,20 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Request-Id:
-      - a28306c1-eb42-4d69-b4ec-000936ce4a71
+      - 5b69e1d6-7aa3-43dc-83f2-4b3cdc273391
       X-Runtime:
-      - '0.010963'
+      - '0.009608'
       X-Xss-Protection:
       - 1; mode=block
       Date:
-      - Sat, 06 May 2017 15:29:32 GMT
+      - Mon, 08 May 2017 06:52:56 GMT
       Content-Length:
-      - '631'
+      - '647'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"MRJW3H1TABU2","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/MRJW3H1TABU2"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
+      string: '{"data":{"id":"4RVR92XL","type":"txns","links":{"self":"https://staging.bloomnet.center/api/v1/txns/4RVR92XL"},"attributes":{"sender-first-name":"Fatima","sender-last-name":"Roberto","sender-street":"24
         Lilian St","sender-city":"Sum City","sender-province":"Sum Province","sender-mobile":null,"recipient-first-name":"Mike","recipient-last-name":"Roberto","recipient-street":"33
-        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":"GB4BPRQI7PHU3ZA25253FNKBBFS3WNTSFWPXCV7V23PF2GFPJGE5GAS5","status":"unfunded","tracking-no":"FJ33E3FZ"}}}'
+        Up St","recipient-city":"Upcity","recipient-province":null,"recipient-mobile":"+638188927288","currency":"PHP","amount":"2050.0","account":"GB4BPRQI7PHU3ZA25253FNKBBFS3WNTSFWPXCV7V23PF2GFPJGE5GAS5","status":"unfunded","tracking-no":"4RVR92XL","ref-no":"NILEDKWDM31N"}}}'
     http_version: 
-  recorded_at: Sat, 06 May 2017 15:29:32 GMT
+  recorded_at: Mon, 08 May 2017 06:52:56 GMT
 recorded_with: VCR 3.0.3

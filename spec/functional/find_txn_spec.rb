@@ -22,7 +22,7 @@ RSpec.describe "Find Txn", vcr: {record: :once} do
 
     expect(create_txn_response).to be_success
 
-    response = client.find_txn(create_txn_response.txn.id)
+    response = client.find_txn(create_txn_response.txn.tracking_no)
 
     expect(response).to be_success
     expect(response.txn.sender_first_name).to eq "Fatima"
