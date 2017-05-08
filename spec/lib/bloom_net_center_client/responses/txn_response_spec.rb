@@ -17,10 +17,11 @@ module BloomNetCenterClient
         let(:body) do
           {
             "data" => {
-              "id" => "refno",
+              "id" => "trackno",
               "type" => "txns",
               "attributes" => {
                 "tracking-no" => "trackno",
+                "ref-no" => "refno",
                 "sender-first-name" => "Fatima",
                 "sender-last-name" => "Roberto",
                 "sender-street" => "24 Lilian St",
@@ -46,7 +47,7 @@ module BloomNetCenterClient
 
         it "builds a Txn out of the response" do
           expect(txn).to be_a Txn
-          expect(txn.id).to eq "refno"
+          expect(txn.id).to eq "trackno"
           expect(txn.tracking_no).to eq "trackno"
           expect(txn.ref_no).to eq "refno"
           expect(txn.sender_first_name).to eq "Fatima"
